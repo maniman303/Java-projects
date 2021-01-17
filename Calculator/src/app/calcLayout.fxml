@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:id="grid" alignment="CENTER" maxHeight="300.0" maxWidth="800.0" minHeight="298.0" minWidth="200.0" prefHeight="400.0" prefWidth="200.0" stylesheets="@Style.css" vgap="5.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.Controller">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" percentWidth="24.0" />
+      <ColumnConstraints hgrow="SOMETIMES" percentWidth="24.0" />
+      <ColumnConstraints hgrow="SOMETIMES" percentWidth="24.0" />
+      <ColumnConstraints hgrow="SOMETIMES" percentWidth="24.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#clickReset" text="C" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+      <GridPane.margin>
+         <Insets left="4.0" right="4.0" />
+      </GridPane.margin>
+      <padding>
+         <Insets bottom="6.0" top="6.0" />
+      </padding></Button>
+   <TextField fx:id="result" alignment="CENTER_RIGHT" editable="false" focusTraversable="false" styleClass="result" text="0" GridPane.columnSpan="4" GridPane.halignment="CENTER" GridPane.vgrow="ALWAYS">
+      <GridPane.margin>
+         <Insets left="4.0" right="4.0" />
+      </GridPane.margin></TextField>
+   <Label fx:id="operator" text="+" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" />
+   <TextField fx:id="argument" alignment="CENTER_RIGHT" editable="false" styleClass="argument" text="text" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+      <GridPane.margin>
+         <Insets left="4.0" right="4.0" />
+      </GridPane.margin></TextField>
+   <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#clickDelete" text="Del" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+      <GridPane.margin>
+         <Insets left="4.0" right="4.0" />
+      </GridPane.margin>
+      <padding>
+         <Insets bottom="6.0" top="6.0" />
+      </padding></Button>
+   <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#clickInv" text="+/-" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+      <GridPane.margin>
+         <Insets left="4.0" right="4.0" />
+      </GridPane.margin>
+      <padding>
+         <Insets bottom="6.0" top="6.0" />
+      </padding></Button>
+   <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#clickOpButton" text="/" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+      <GridPane.margin>
+         <Insets left="4.0" right="4.0" />
+      </GridPane.margin>
+      <padding>
+         <Insets bottom="6.0" top="6.0" />
+      </padding></Button>
+   <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#clickNumButton" text="7" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.vgrow="ALWAYS">
+      <GridPane.margin>
+         <Insets left="4.0" right="4.0" />
+      </GridPane.margin>
+      <padding>
+         <Insets bottom="6.0" top="6.0" />
+      </padding></Button>
+   <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#clickNumButton" text="8" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+      <GridPane.margin>
+         <Insets left="4.0" right="4.0" />
+      </GridPane.margin>
+      <padding>
+         <Insets bottom="6.0" top="6.0" />
+      </padding></Button>
+   <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#clickNumButton" text="9" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+      <GridPane.margin>
+         <Insets left="4.0" right="4.0" />
+      </GridPane.margin>
+      <padding>
+         <Insets bottom="6.0" top="6.0" />
+      </padding></Button>
+   <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#clickOpButton" text="*" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+      <GridPane.margin>
+         <Insets left="4.0" right="4.0" />
+      </GridPane.margin>
+      <padding>
+         <Insets bottom="6.0" top="6.0" />
+      </padding></Button>
+   <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#clickNumButton" text="4" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.vgrow="ALWAYS">
+      <GridPane.margin>
+         <Insets left="4.0" right="4.0" />
+      </GridPane.margin>
+      <padding>
+         <Insets bottom="6.0" top="6.0" />
+      </padding></Button>
+   <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#clickNumButton" text="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.vgrow="ALWAYS">
+      <GridPane.margin>
+         <Insets left="4.0" right="4.0" />
+      </GridPane.margin></Button>
+   <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#clickOpButton" text="!" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.vgrow="ALWAYS">
+      <GridPane.margin>
+         <Insets left="4.0" right="4.0" />
+      </GridPane.margin></Button>
+   <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#clickOpButton" text="Newton" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="7">
+      <GridPane.margin>
+         <Insets left="4.0" right="4.0" />
+      </GridPane.margin>
+      <padding>
+         <Insets bottom="6.0" top="6.0" />
+      </padding></Button>
+   <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#clickNumButton" text="5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+      <GridPane.margin>
+         <Insets left="4.0" right="4.0" />
+      </GridPane.margin>
+      <padding>
+         <Insets bottom="6.0" top="6.0" />
+      </padding></Button>
+   <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#clickNumButton" text="6" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+      <GridPane.margin>
+         <Insets left="4.0" right="4.0" />
+      </GridPane.margin>
+      <padding>
+         <Insets bottom="6.0" top="6.0" />
+      </padding></Button>
+   <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#clickOpButton" text="-" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+      <GridPane.margin>
+         <Insets left="4.0" right="4.0" />
+      </GridPane.margin>
+      <padding>
+         <Insets bottom="6.0" top="6.0" />
+      </padding></Button>
+   <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#clickNumButton" text="2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+      <GridPane.margin>
+         <Insets left="4.0" right="4.0" />
+      </GridPane.margin></Button>
+   <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#clickNumButton" text="3" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+      <GridPane.margin>
+         <Insets left="4.0" right="4.0" />
+      </GridPane.margin></Button>
+   <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#clickOpButton" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+      <GridPane.margin>
+         <Insets left="4.0" right="4.0" />
+      </GridPane.margin>
+      <padding>
+         <Insets bottom="6.0" top="6.0" />
+      </padding></Button>
+   <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#clickOpButton" text="\%" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+      <GridPane.margin>
+         <Insets left="4.0" right="4.0" />
+      </GridPane.margin></Button>
+   <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#clickOpButton" text="^" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+      <GridPane.margin>
+         <Insets left="4.0" right="4.0" />
+      </GridPane.margin></Button>
+   <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#clickCalc" text="=" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+      <GridPane.margin>
+         <Insets left="4.0" right="4.0" />
+      </GridPane.margin>
+      <padding>
+         <Insets bottom="6.0" top="6.0" />
+      </padding></Button>
+   <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#clickNumButton" text="0" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.vgrow="ALWAYS">
+      <GridPane.margin>
+         <Insets left="4.0" right="4.0" />
+      </GridPane.margin></Button>
+   <padding>
+      <Insets top="5.0" />
+   </padding>
+</GridPane>

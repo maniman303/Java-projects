@@ -1,0 +1,59 @@
+.root {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+GridPane {
+    -fx-background-color: #494949;
+}
+
+.result {
+    -fx-text-inner-color: #c7cfd3;
+    -fx-font-weight: bold;
+    -fx-background-color: transparent;
+    -fx-background-radius: 2;
+    -fx-background-insets: 0;
+}
+
+.result:focused {
+    -fx-background-insets: 0;
+}
+
+.argument {
+    -fx-text-inner-color: #515558;
+    -fx-font-weight: bold;
+    -fx-background-color: #909ba3;
+    -fx-background-radius: 2;
+    -fx-background-insets: 0;
+}
+
+.argument:focused {
+    -fx-background-insets: 0;
+}
+
+.label {
+    -fx-text-fill: #c7cfd3;
+    -fx-font-weight: bold;
+    -fx-font-size: 20;
+}
+
+Button {
+    -fx-font-weight: bold;
+    -fx-text-fill: #c7cfd3;
+    -fx-background-insets: 0;
+    -fx-background-radius: 2;
+    -fx-background-color: #757e84;
+}
+
+Button:hover {
+    -fx-background-color: #757e84;
+}
+
+Button:focused {
+    -fx-background-insets: 0;
+}
+
+Button:pressed {
+    -fx-background-insets: 0;
+    -fx-background-color: #909ba3;
+}
